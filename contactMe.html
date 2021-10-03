@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="/javascript/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body onload="sendMail();">
+
+    <header>
+    	<div class="container">
+		<div style="overflow: hidden;">		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="https://bluehenraj.github.io">Previous Student</a></li>
+					<li><a href="https://jdw1023.github.io">Next Student</a></li>
+					<li><a href="https://mattm401.github.io/">Course Page</a></li>
+					<li><a href="https://acastro0726.github.io/aboutMe.html">About Me</a></li>
+					<li><a href="contactMe.html">Contact Form</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+   
+    <div class="contact-title">
+        <h1>Please fill out your information below</h1>
+    </div>
+
+    <div id="contactMe-form">
+            <form id="contact-form">
+                
+                <div class="fname">
+                    <div class="fname-entry">
+                        <input type="text" id="user_fname" name="user_fname" class="form-control" placeholder="Enter your first name">
+                    </div>
+                </div>
+                
+                <div class="lname">
+                    <div class="lname-entry">
+                        <input type="text" id="user_lname" name="user_lname" class="form-control" placeholder="Enter your last name">
+                    </div>
+                </div>
+                
+                <div class="email">
+                    <div class="email-entry">
+                        <input type="text" id="user_email" name="user_email" class="form-control" placeholder="xyz@<domain>.<top-level domain>"> 
+                    </div>
+                </div>
+                
+                <div class="phone">
+                    <div class="phone-entry">
+                        <input type="text" id="user_phone" name="user_phone" class="form-control" placeholder="123-456-7890">
+                    </div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-entry">
+                        <textarea style="background-color: transparent;" id="user_message" name="user_message" cols="100" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+                
+                <input type="submit" value="Send" class="button">
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>

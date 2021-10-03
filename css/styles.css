@@ -195,3 +195,7 @@ p[type=text]{
 ul[type=text]{
   color:#fff;
 }
+
+.aboutMe-format{
+  text-align:left;
+}

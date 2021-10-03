@@ -195,3 +195,7 @@ ul[type=text]{
 .aboutMe-format{
   text-align:left;
 }
+
+.pageText ul, h1, h2, h3, p{
+  color:#fff;
+}

@@ -176,6 +176,6 @@ textarea{
   font-size: 14px;
 }
 
-.aboutMe1 h1{
-  color: #fff;
+h1[type=text]{
+  color:#fff;
 }

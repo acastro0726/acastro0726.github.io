@@ -24,50 +24,73 @@ header::after {
   clear: both;
 }
 
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: rgb(53, 53, 53);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: rgb(37, 37, 37);
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
+.nav {
+  background-color: orange; 
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  top: 0%;
   width: 100%;
+  overflow: hidden;
+  padding: 1% 1%;
+  z-index: 10000;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+}
+
+
+.nav a {
+  float: left; 
+  color:black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover, .dropdown:hover .dropdownbtn {
+  background-color: gray;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdownbtn {
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+padding: 15px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+display: block;
 }
 
 .contact-title
@@ -196,4 +219,16 @@ ul[type=text]{
 
 .pageText ul, h1, h2, h3, p{
   color:#fff;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: orange;
+  color: black;
+}
+
+.footerimage{
+  width: 50px;
+  height: 50px;
 }
